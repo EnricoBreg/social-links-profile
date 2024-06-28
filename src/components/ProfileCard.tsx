@@ -1,9 +1,9 @@
 import {
+  Avatar,
   Box,
   Button,
   Card,
   CardBody,
-  Image,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -18,7 +18,7 @@ const ProfileCard = ({ user }: Props) => {
     <Card borderRadius={10} padding={{ sm: 2, md: 4 }} margin={2}>
       <CardBody>
         <VStack spacing={5} align="center">
-          <Image src={user.avatar_image} borderRadius="full" boxSize="80px" />
+          <Avatar src={user.avatar_image} borderRadius="full" boxSize="80px" />
           <Box textAlign="center">
             <Text as="h5" fontWeight={700} fontSize="x-large">
               {user.name}
@@ -36,7 +36,6 @@ const ProfileCard = ({ user }: Props) => {
                 key={link.slug}
                 width={"100%"}
                 fontSize="sm"
-                fontWeight="bold"
                 padding="0.5rem 5.25rem"
                 _hover={{ bg: "green.500", color: "gray.900" }}
               >

@@ -1,4 +1,5 @@
 import { extendTheme, ThemeConfig } from "@chakra-ui/react";
+import '@fontsource-variable/inter';
 
 const config: ThemeConfig = {
   initialColorMode: "dark",
@@ -7,6 +8,9 @@ const config: ThemeConfig = {
 
 const extendedTheme = extendTheme({
   config,
+  fonts: {
+    body: `'Inter', sans-serif`,
+  },
   colors: {
     gray: {
       50: "#f9f9f9",

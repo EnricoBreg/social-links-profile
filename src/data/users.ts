@@ -1,3 +1,5 @@
+import avatarImage from '../assets/images/avatar-jessica.jpeg'
+
 // array of user objects
 const users = [
   {
@@ -5,7 +7,7 @@ const users = [
     name: "Jessica Randall",
     location: "London, United Kingdom",
     biography: "Front-end developer and avid reader.",
-    avatar_image: "../assets/images/avatar-jessica.jpeg",
+    avatar_image: avatarImage,
     links: [
       { slug: "git-hub", name: "GitHub" },
       { slug: "frontend-mentor", name: "Frontend Mentor" },
